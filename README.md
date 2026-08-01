@@ -1,13 +1,13 @@
 # Newborn Length-of-Stay Prediction using Deep Learning (SPARCS Dataset)
 
-## 📌 Project Overview
+##  Project Overview
 This project develops a robust **Deep Learning framework** to predict the **Length of Stay (LOS)** for newborns in New York State hospitals. Leveraging a **six-year composite dataset (2015–2017 & 2021–2023)** from the **SPARCS** database, the study addresses critical challenges in healthcare analytics, including high-dimensional sparse data, extreme outliers, and the need for clinical interpretability.
 
 We propose a custom **Multi-Layer Perceptron (MLP)** architecture optimized with **Huber Loss** and **Log-Transformation**, achieving state-of-the-art performance (RMSE 2.1169) compared to a Random Forest baseline. Furthermore, **SHAP (SHapley Additive exPlanations)** is integrated to provide feature-level transparency for clinical decision support.
 
 ---
 
-## 📂 Repository Structure
+##  Repository Structure
 The project is divided into modular notebooks to ensure reproducibility and logical flow:
 
 | File Name | Description |
@@ -19,7 +19,7 @@ The project is divided into modular notebooks to ensure reproducibility and logi
 
 ---
 
-## 📊 Dataset
+##  Dataset
 **Source:** New York State Statewide Planning and Research Cooperative System (SPARCS).
 * **Scope:** 2015–2017 and 2021–2023 (Composite dataset).
 * **Cohort:** Newborns (Major Diagnostic Category 15).
@@ -31,7 +31,7 @@ The project is divided into modular notebooks to ensure reproducibility and logi
 
 ---
 
-## 🛠️ Methodology
+##  Methodology
 
 ### 1. Preprocessing Pipeline
 * **Filtering:** Strict inclusion of only valid newborn records (MDC 15).
@@ -49,7 +49,7 @@ The project is divided into modular notebooks to ensure reproducibility and logi
 
 ---
 
-## 📈 Experimental Results
+##  Experimental Results
 
 | Model | RMSE (Lower is Better) | Status |
 | :--- | :--- | :--- |
@@ -60,14 +60,14 @@ The project is divided into modular notebooks to ensure reproducibility and logi
 
 ---
 
-## 🧠 Interpretability (SHAP)
+##  Interpretability (SHAP)
 To validate clinical trust, we used **SHAP** to explain the model's logic:
 1.  **Global Importance:** `APR Severity of Illness` and `Birth Weight` were identified as the top two drivers of Length of Stay.
 2.  **Local Explanation:** For individual patients, the model correctly credits "Minor Severity" as a protective factor (reducing stay) and "Surgical Procedures" as risk factors (increasing stay).
 
 ---
 
-## 🚀 How to Run
+##  How to Run
 1.  Clone the repository:
    
 2.  **Download the Data:**
@@ -79,7 +79,7 @@ To validate clinical trust, we used **SHAP** to explain the model's logic:
 
 ---
 
-## 📜 License
+##  License
 This project is for academic purposes. The underlying data is owned by the NYS Department of Health.
 
 
